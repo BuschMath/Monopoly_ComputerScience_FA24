@@ -7,6 +7,7 @@
 
 using namespace std;
 
+//Makes a struct for the cards
 struct Card
 {
     string description;
@@ -16,9 +17,9 @@ struct Card
 std::vector<Card> chanceDeck;
 std::vector<Card> communityChestDeck;
 
+//Constructor
 RandomChanceCards::RandomChanceCards()
 {
-   
     string drawnCard;
     vector<string> chanceDeck;
     vector<string> communityChestDeck;
@@ -28,6 +29,7 @@ RandomChanceCards::~RandomChanceCards()
 {
 }
 
+//Draws a random chance card
 void RandomChanceCards::drawChanceCard()
 {
     srand(static_cast<unsigned>(time(0)));
@@ -69,6 +71,7 @@ void RandomChanceCards::drawChanceCard()
     }
 }
 
+//Draws a random community chest card
 void RandomChanceCards::drawCommuniryChestCard()
 {
         srand(static_cast<unsigned>(time(0)));
@@ -110,6 +113,7 @@ void RandomChanceCards::drawCommuniryChestCard()
             }
 }
 
+//Shuffles the chance deck
 void RandomChanceCards::shuffleChanceDeck()
 {
     chanceDeck = {
@@ -127,6 +131,7 @@ void RandomChanceCards::shuffleChanceDeck()
  
 }
 
+//Shuffles the community chest deck
 void RandomChanceCards::shuffleCommunityChestDeck()
 {
     communityChestDeck = {
@@ -143,6 +148,8 @@ void RandomChanceCards::shuffleCommunityChestDeck()
     };
 }
 
+
+//Changes the money of the player
 void RandomChanceCards::moneyChange()
 {
 
