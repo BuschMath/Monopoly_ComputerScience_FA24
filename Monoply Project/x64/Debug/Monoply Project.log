@@ -1,0 +1,3 @@
+﻿  Monopoly Main.cpp
+C:\Users\lanep\source\repos\Monoply Project\Monoply Project\Monopoly Main.cpp(13,11): warning C4804: '<': unsafe use of type 'bool' in operation
+LINK : fatal error LNK1168: cannot open C:\Users\lanep\source\repos\Monoply Project\x64\Debug\Monoply Project.exe for writing
