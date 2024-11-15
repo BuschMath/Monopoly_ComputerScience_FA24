@@ -3,47 +3,33 @@
 #include <cmath>
 #include "HowManyPlayers.h"
 
+using namespace std;
+
 int main ()
 {
+	int startsl = 0;
 
-
-
-/*	int playerselect;
-	std::cout << "please input up to 8 number repersenting the character you would like to select" << std::endl;
-
-	std::cin >> playerselect;
-
-	while (9 < playerselect < 0)
+	for (startsl; startsl <= 1; startsl++)
 	{
-		if (playerselect == 1) {
-			std::cin >> playerselect;
-		}
-		if (playerselect == 2) {
-			std::cin >> playerselect;
-		}
-		if (playerselect == 3) {
-			std::cin >> playerselect;
-		}
-		if (playerselect == 4) {
-			std::cin >> playerselect;
-		}
-		if (playerselect == 5) {
-			std::cin >> playerselect;
-		}
-		if (playerselect == 6) {
-			std::cin >> playerselect;
-		}
-		if (playerselect == 7) {
-			std::cin >> playerselect;
-		}
-		if (playerselect == 8) {
-			std::cin >> playerselect;
-		}
-		else
-		{
-			std::cout << "Incompatible input" << std::endl;
-		}
-	}*/
+		cout << "Please select either play or exit" << endl;
+		cout << "=================================" << endl;
+		cout << "To play monnoplay please input the number 1" << endl;
+		cout << "To exit this menu please input anything other than 1" << endl;
+		
+		
 
+		while (startsl == 0) {
+			cin >> startsl;
+			if (startsl == 1) {
+				cout << ":You have selected Monopoly:" << endl;
+			}
+			else {
+				cout << ":You Have exited the menu, I guess my game wasen't good enough:" << endl;
+				startsl++;
+			}
+		}
+
+
+ }
 	return 0;
 }

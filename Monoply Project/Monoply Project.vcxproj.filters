@@ -18,6 +18,12 @@
     <ClCompile Include="Monopoly Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="RandomChanceCards.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Gamestartscreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="HowManyPlayers.h">

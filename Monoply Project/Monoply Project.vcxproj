@@ -127,7 +127,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Gamestartscreen.cpp" />
     <ClCompile Include="Monopoly Main.cpp" />
+    <ClCompile Include="RandomChanceCards.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="HowManyPlayers.h" />
