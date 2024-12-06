@@ -3,18 +3,16 @@
 #include <string>
 using namespace std;
 
-// Define a struct to represent a Monopoly property
 struct Property {
-    string name;       // Name of the property (e.g., "Mediterranean Avenue")
-    int value;         // Property value (e.g., 60)
-    int position;      // Location on the board (index 0 to 39)
+    string name;       
+    int value;         
+    int position;      // Location on the board 
 };
 
 class MonopolyBoard {
 public:
-    // Constructor initializes all the properties on the board
+    
     MonopolyBoard() {
-        // Initialize the properties on the board with names, values, and positions
         properties = {
             {"Mediterranean Avenue", 60, 1},
             {"Baltic Avenue", 60, 3}, {"Reading Railroad", 200, 5},
@@ -31,7 +29,6 @@ public:
             {"Park Place", 350, 36}, {"Boardwalk", 400, 37}
         };
     }
-    // Method to display all properties
     void displayProperties() const {
         cout << "Monopoly Properties: " << endl;
         for (const auto& property : properties) {
@@ -41,29 +38,21 @@ public:
         }
     }
     
-
-    // Method to get a property by position
     Property getPropertyByPosition(int pos) const {
         for (const auto& property : properties) {
             if (property.position == pos) {
                 return property;
             }
         }
-        // Return an empty property if not found (just for safety, you could also throw an exception)
         return Property{"Unknown", 0, -1};
     }
 
 private:
-    vector<Property> properties;  // Vector to store all the properties
+    vector<Property> properties;  
 };
 
 int main() {
-    MonopolyBoard board;  // Create an instance of the MonopolyBoard class
-
-    // Call the method to display all properties
-    board.displayProperties();
-
-
-    
+    MonopolyBoard board;  
+    board.displayProperties();  
     return 0;
 }
